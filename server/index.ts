@@ -10,10 +10,11 @@ const fastify = require('fastify')();
 // });
 const fp: FastifyRegister = require('fastify-plugin');
 const db: Knex = require('./db/');
+require('dotenv').config();
+
 // model classes
 const QuestionsAndAnswers = require('./qa/service');
 const Products = require('./products/service');
-
 const Reviews = require('./reviews/service');
 
 async function decorateFastifyInstance(): Promise<void> {

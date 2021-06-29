@@ -1,0 +1,11 @@
+SERVICES:
+    db:
+      image: postgres
+      restart: always
+      environment:
+        POSTGRES_PASSWORD:
+
+    server:
+      build: atelier
+      depends_on:
+        - 'database'

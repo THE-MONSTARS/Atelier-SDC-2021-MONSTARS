@@ -22,6 +22,7 @@
   "homepage": "https://github.com/THE-MONSTARS/Atelier-SDC-2021-MONSTARS#readme",
   "dependencies": {
     "@types/node": "^15.12.4",
+    "dotenv": "^10.0.0",
     "fastify": "^3.18.0",
     "fastify-cli": "^2.13.0",
     "fastify-plugin": "^3.0.0",
