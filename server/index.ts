@@ -1,12 +1,13 @@
 import { FastifyRegister } from "fastify";
 import { Knex } from 'knex';
 
-const fastify = require('fastify')({
-  logger: {
-    level: 'info',
-    prettyPrint: true,
-  },
-});
+const fastify = require('fastify')();
+// ({
+//   logger: {
+//     level: 'info',
+//     prettyPrint: true,
+//   },
+// });
 const fp: FastifyRegister = require('fastify-plugin');
 const db: Knex = require('./db/');
 // model classes

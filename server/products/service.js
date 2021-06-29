@@ -16,11 +16,12 @@ module.exports = class Products {
     return product;
   }
 
-  // async addProduct(productInfo) {
+  async addProduct(productInfo) {
   //   const { id, name, slogan, description, category, default_price } = productInfo.body;
   // const productAdded = await this.db.insert(productInfo);
   // return productAdded;
-  // }
+  console.log("successfully posted a product!");
+  }
 
   async getStyles(id) {
     const results = await this.db.select().from('products').where({ 'products.id': `${id}` });
